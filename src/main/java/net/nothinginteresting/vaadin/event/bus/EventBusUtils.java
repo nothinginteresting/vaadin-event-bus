@@ -148,8 +148,6 @@ public class EventBusUtils
 			{
 				EventBusUtils.setChildrenIds(container);
 				bus.subscribe(container);
-				//AttachedEvent event2 = new AttachedEvent(container);
-				//System.out.println("initEventBusOwner: going to send " + event2);
 				bus.send(event);
 			}
 		});
